@@ -1,0 +1,1848 @@
+"aarsBeskaeftigelse": {
+                "properties": {
+                  "aar": {
+                    "type": "long"
+                  },
+                  "intervalKode": {
+                    "type": "string"
+                  }
+                }
+              },
+              "aarsbeskaeftigelse": {
+                "properties": {
+                  "aar": {
+                    "type": "long"
+                  },
+                  "intervalKodeAntalAarsvaerk": {
+                    "type": "string"
+                  },
+                  "intervalKodeAntalAnsatte": {
+                    "type": "string"
+                  },
+                  "intervalKodeAntalInklusivEjere": {
+                    "type": "string"
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+"attributter": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "sekvensnr": {
+                    "type": "long"
+                  },
+                  "type": {
+                    "type": "string"
+                  },
+                  "vaerdier": {
+                    "type": "nested",
+                    "include_in_parent": true,
+                    "properties": {
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "vaerdi": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "vaerditype": {
+                    "type": "string"
+                  }
+                }
+              },
+
+ "beliggenhedsadresse": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "bogstavFra": {
+                    "type": "string"
+                  },
+                  "bogstavTil": {
+                    "type": "string"
+                  },
+                  "bynavn": {
+                    "type": "string"
+                  },
+                  "conavn": {
+                    "type": "string"
+                  },
+                  "etage": {
+                    "type": "string"
+                  },
+                  "fritekst": {
+                    "type": "string"
+                  },
+                  "husnummerFra": {
+                    "type": "long"
+                  },
+                  "husnummerTil": {
+                    "type": "long"
+                  },
+                  "kommune": {
+                    "properties": {
+                      "kommuneKode": {
+                        "type": "long"
+                      },
+                      "kommuneNavn": {
+                        "type": "string"
+                      },
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "landekode": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "postboks": {
+                    "type": "string"
+                  },
+                  "postdistrikt": {
+                    "type": "string"
+                  },
+                  "postnummer": {
+                    "type": "long"
+                  },
+                  "sidedoer": {
+                    "type": "string"
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  },
+                  "vejkode": {
+                    "type": "long"
+                  },
+                  "vejnavn": {
+                    "type": "string"
+                  }
+                }
+              },
+"bibranche1": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "branchekode": {
+                    "type": "string"
+                  },
+                  "branchetekst": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+
+ "bibranche2": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "branchekode": {
+                    "type": "string"
+                  },
+                  "branchetekst": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+
+ "bibranche3": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "branchekode": {
+                    "type": "string"
+                  },
+                  "branchetekst": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+  "binavne": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "navn": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+
+ "brancheAnsvarskode": {
+                "type": "long"
+              },
+ "cvrNummer": {
+                "type": "string"
+              },
+
+  "dataAdgang": {
+                "type": "long"
+              },
+ "deltagerRelation": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "deltager": {
+                    "type": "nested",
+                    "include_in_parent": true,
+                    "properties": {
+                      "beliggenhedsadresse": {
+                        "properties": {
+                          "bogstavFra": {
+                            "type": "string"
+                          },
+                          "bogstavTil": {
+                            "type": "string"
+                          },
+                          "bynavn": {
+                            "type": "string"
+                          },
+                          "conavn": {
+                            "type": "string"
+                          },
+                          "etage": {
+                            "type": "string"
+                          },
+                          "fritekst": {
+                            "type": "string"
+                          },
+                          "husnummerFra": {
+                            "type": "long"
+                          },
+                          "husnummerTil": {
+                            "type": "long"
+                          },
+                          "kommune": {
+                            "properties": {
+                              "kommuneKode": {
+                                "type": "long"
+                              },
+                              "kommuneNavn": {
+                                "type": "string"
+                              },
+                              "periode": {
+                                "properties": {
+                                  "gyldigFra": {
+                                    "type": "date",
+                                    "format": "dateOptionalTime"
+                                  },
+                                  "gyldigTil": {
+                                    "type": "date",
+                                    "format": "dateOptionalTime"
+                                  }
+                                }
+                              },
+                              "sidstOpdateret": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              }
+                            }
+                          },
+                          "landekode": {
+                            "type": "string"
+                          },
+                          "periode": {
+                            "properties": {
+                              "gyldigFra": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              },
+                              "gyldigTil": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              }
+                            }
+                          },
+                          "postboks": {
+                            "type": "string"
+                          },
+                          "postdistrikt": {
+                            "type": "string"
+                          },
+                          "postnummer": {
+                            "type": "long"
+                          },
+                          "sidedoer": {
+                            "type": "string"
+                          },
+                          "sidstOpdateret": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "vejkode": {
+                            "type": "long"
+                          },
+                          "vejnavn": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "enhedsNummer": {
+                        "type": "long"
+                      },
+                      "enhedstype": {
+                        "type": "string"
+                      },
+                      "forretningsnoegle": {
+                        "type": "long"
+                      },
+                      "navne": {
+                        "properties": {
+                          "navn": {
+                            "type": "string"
+                          },
+                          "periode": {
+                            "properties": {
+                              "gyldigFra": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              },
+                              "gyldigTil": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              }
+                            }
+                          },
+                          "sidstOpdateret": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstIndlaest": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+
+ "kontorsteder": {
+                    "properties": {
+                      "attributter": {
+                        "type": "nested",
+                        "include_in_parent": true,
+                        "properties": {
+                          "sekvensnr": {
+                            "type": "long"
+                          },
+                          "type": {
+                            "type": "string"
+                          },
+                          "vaerdier": {
+                            "properties": {
+                              "periode": {
+                                "properties": {
+                                  "gyldigFra": {
+                                    "type": "date",
+                                    "format": "dateOptionalTime"
+                                  },
+                                  "gyldigTil": {
+                                    "type": "date",
+                                    "format": "dateOptionalTime"
+                                  }
+                                }
+                              },
+                              "sidstOpdateret": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              },
+                              "vaerdi": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "vaerditype": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "penhed": {
+                        "properties": {
+                          "beliggenhedsadresse": {
+                            "type": "nested",
+                            "include_in_parent": true,
+                            "properties": {
+                              "bogstavFra": {
+                                "type": "string"
+                              },
+                              "bogstavTil": {
+                                "type": "string"
+                              },
+                              "bynavn": {
+                                "type": "string"
+                              },
+                              "conavn": {
+                                "type": "string"
+                              },
+                              "etage": {
+                                "type": "string"
+                              },
+                              "husnummerFra": {
+                                "type": "long"
+                              },
+                              "husnummerTil": {
+                                "type": "long"
+                              },
+                              "kommune": {
+                                "properties": {
+                                  "kommuneKode": {
+                                    "type": "long"
+                                  },
+                                  "kommuneNavn": {
+                                    "type": "string"
+                                  },
+                                  "periode": {
+                                    "properties": {
+                                      "gyldigFra": {
+                                        "type": "date",
+                                        "format": "dateOptionalTime"
+                                      },
+                                      "gyldigTil": {
+                                        "type": "date",
+                                        "format": "dateOptionalTime"
+                                      }
+                                    }
+                                  },
+                                  "sidstOpdateret": {
+                                    "type": "date",
+                                    "format": "dateOptionalTime"
+                                  }
+                                }
+                              },
+                              "landekode": {
+                                "type": "string"
+                              },
+                              "periode": {
+                                "properties": {
+                                  "gyldigFra": {
+                                    "type": "date",
+                                    "format": "dateOptionalTime"
+                                  },
+                                  "gyldigTil": {
+                                    "type": "date",
+                                    "format": "dateOptionalTime"
+                                  }
+                                }
+                              },
+                              "postboks": {
+                                "type": "string"
+                              },
+                              "postdistrikt": {
+                                "type": "string"
+                              },
+                              "postnummer": {
+                                "type": "long"
+                              },
+                              "sidedoer": {
+                                "type": "string"
+                              },
+                              "sidstOpdateret": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              },
+                              "vejkode": {
+                                "type": "long"
+                              },
+                              "vejnavn": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "enhedsNummer": {
+                            "type": "long"
+                          },
+                          "enhedstype": {
+                            "type": "string"
+                          },
+                          "forretningsnoegle": {
+                            "type": "long"
+                          },
+                          "navne": {
+                            "type": "nested",
+                            "include_in_parent": true,
+                            "properties": {
+                              "navn": {
+                                "type": "string"
+                              },
+                              "periode": {
+                                "properties": {
+                                  "gyldigFra": {
+                                    "type": "date",
+                                    "format": "dateOptionalTime"
+                                  },
+                                  "gyldigTil": {
+                                    "type": "date",
+                                    "format": "dateOptionalTime"
+                                  }
+                                }
+                              },
+                              "sidstOpdateret": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              }
+                            }
+                          },
+                          "sidstIndlaest": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "sidstOpdateret": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      }
+                    }
+                  },
+  "organisationer": {
+                    "properties": {
+                      "attributter": {
+                        "type": "nested",
+                        "include_in_parent": true,
+                        "properties": {
+                          "sekvensnr": {
+                            "type": "long"
+                          },
+                          "type": {
+                            "type": "string"
+                          },
+                          "vaerdier": {
+                            "properties": {
+                              "periode": {
+                                "properties": {
+                                  "gyldigFra": {
+                                    "type": "date",
+                                    "format": "dateOptionalTime"
+                                  },
+                                  "gyldigTil": {
+                                    "type": "date",
+                                    "format": "dateOptionalTime"
+                                  }
+                                }
+                              },
+                              "sidstOpdateret": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              },
+                              "vaerdi": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "vaerditype": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "enhedsNummerOrganisation": {
+                        "type": "long"
+                      },
+                      "hovedtype": {
+                        "type": "string"
+                      },
+                      "medlemsData": {
+                        "type": "nested",
+                        "include_in_parent": true,
+                        "properties": {
+                          "attributter": {
+                            "properties": {
+                              "sekvensnr": {
+                                "type": "long"
+                              },
+                              "type": {
+                                "type": "string"
+                              },
+                              "vaerdier": {
+                                "properties": {
+                                  "periode": {
+                                    "properties": {
+                                      "gyldigFra": {
+                                        "type": "date",
+                                        "format": "dateOptionalTime"
+                                      },
+                                      "gyldigTil": {
+                                        "type": "date",
+                                        "format": "dateOptionalTime"
+                                      }
+                                    }
+                                  },
+                                  "sidstOpdateret": {
+                                    "type": "date",
+                                    "format": "dateOptionalTime"
+                                  },
+                                  "vaerdi": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "vaerditype": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "organisationsNavn": {
+                        "type": "nested",
+                        "include_in_parent": true,
+                        "properties": {
+                          "navn": {
+                            "type": "string"
+                          },
+                          "periode": {
+                            "properties": {
+                              "gyldigFra": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              },
+                              "gyldigTil": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              }
+                            }
+                          },
+                          "sidstOpdateret": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+  "elektroniskPost": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "hemmelig": {
+                    "type": "boolean"
+                  },
+                  "kontaktoplysning": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+ "enhedsNummer": {
+                "type": "long"
+              },
+ "enhedstype": {
+                "type": "string"
+              },
+ "fejlBeskrivelse": {
+                "type": "string"
+              },
+ "fejlRegistreret": {
+                "type": "boolean"
+              },
+
+  "fejlVedIndlaesning": {
+                "type": "boolean"
+              },
+ "fusioner": {
+                "properties": {
+                  "enhedsNummerOrganisation": {
+                    "type": "long"
+                  },
+                  "indgaaende": {
+                    "type": "nested",
+                    "include_in_parent": true,
+                    "properties": {
+                      "sekvensnr": {
+                        "type": "long"
+                      },
+                      "type": {
+                        "type": "string"
+                      },
+                      "vaerdier": {
+                        "properties": {
+                          "periode": {
+                            "properties": {
+                              "gyldigFra": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              },
+                              "gyldigTil": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              }
+                            }
+                          },
+                          "sidstOpdateret": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "vaerdi": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "vaerditype": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "organisationsNavn": {
+                    "type": "nested",
+                    "include_in_parent": true,
+                    "properties": {
+                      "navn": {
+                        "type": "string"
+                      },
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "udgaaende": {
+                    "type": "nested",
+                    "include_in_parent": true,
+                    "properties": {
+                      "sekvensnr": {
+                        "type": "long"
+                      },
+                      "type": {
+                        "type": "string"
+                      },
+                      "vaerdier": {
+                        "properties": {
+                          "periode": {
+                            "properties": {
+                              "gyldigFra": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              },
+                              "gyldigTil": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              }
+                            }
+                          },
+                          "sidstOpdateret": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "vaerdi": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "vaerditype": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+  "harFremtidigAendring": {
+                "type": "boolean"
+              },
+  "hjemmeside": {
+                "properties": {
+                  "hemmelig": {
+                    "type": "boolean"
+                  },
+                  "kontaktoplysning": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+ "hovedbranche": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "branchekode": {
+                    "type": "string"
+                  },
+                  "branchetekst": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+ "kvartalsbeskaeftigelse": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "aar": {
+                    "type": "long"
+                  },
+                  "antalAarsvaerk": {
+                    "type": "long"
+                  },
+                  "antalAnsatte": {
+                    "type": "long"
+                  },
+                  "intervalKodeAntalAarsvaerk": {
+                    "type": "string"
+                  },
+                  "intervalKodeAntalAnsatte": {
+                    "type": "string"
+                  },
+                  "kvartal": {
+                    "type": "long"
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+ "livsforloeb": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+ "maanedsbeskaeftigelse": {
+                "properties": {
+                  "aar": {
+                    "type": "long"
+                  },
+                  "intervalKodeAntalAarsvaerk": {
+                    "type": "string"
+                  },
+                  "intervalKodeAntalAnsatte": {
+                    "type": "string"
+                  },
+                  "maaned": {
+                    "type": "long"
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+ "naermesteFremtidigeDato": {
+                "type": "date",
+                "format": "dateOptionalTime"
+              },
+ "navne": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "navn": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+ "obligatoriskEmail": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "hemmelig": {
+                    "type": "boolean"
+                  },
+                  "kontaktoplysning": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+  "penheder": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "pNummer": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+ "postadresse": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "bogstavFra": {
+                    "type": "string"
+                  },
+                  "bynavn": {
+                    "type": "string"
+                  },
+                  "conavn": {
+                    "type": "string"
+                  },
+                  "etage": {
+                    "type": "string"
+                  },
+                  "fritekst": {
+                    "type": "string"
+                  },
+                  "husnummerFra": {
+                    "type": "long"
+                  },
+                  "husnummerTil": {
+                    "type": "long"
+                  },
+                  "kommune": {
+                    "properties": {
+                      "kommuneKode": {
+                        "type": "long"
+                      },
+                      "kommuneNavn": {
+                        "type": "string"
+                      },
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "landekode": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "postboks": {
+                    "type": "string"
+                  },
+                  "postdistrikt": {
+                    "type": "string"
+                  },
+                  "postnummer": {
+                    "type": "long"
+                  },
+                  "sidedoer": {
+                    "type": "string"
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  },
+                  "vejkode": {
+                    "type": "long"
+                  },
+                  "vejnavn": {
+                    "type": "string"
+                  }
+                }
+              },
+  "regNummer": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "regnummer": {
+                    "type": "string"
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+  "reklamebeskyttet": {
+                "type": "boolean"
+              },
+  "samtId": {
+                "type": "long"
+              },
+ "sidstIndlaest": {
+                "type": "date",
+                "format": "dateOptionalTime"
+              },
+ "sidstOpdateret": {
+                "type": "date",
+                "format": "dateOptionalTime"
+              },
+  "spaltninger": {
+                "properties": {
+                  "enhedsNummerOrganisation": {
+                    "type": "long"
+                  },
+                  "indgaaende": {
+                    "type": "nested",
+                    "include_in_parent": true,
+                    "properties": {
+                      "sekvensnr": {
+                        "type": "long"
+                      },
+                      "type": {
+                        "type": "string"
+                      },
+                      "vaerdier": {
+                        "properties": {
+                          "periode": {
+                            "properties": {
+                              "gyldigFra": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              },
+                              "gyldigTil": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              }
+                            }
+                          },
+                          "sidstOpdateret": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "vaerdi": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "vaerditype": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "organisationsNavn": {
+                    "type": "nested",
+                    "include_in_parent": true,
+                    "properties": {
+                      "navn": {
+                        "type": "string"
+                      },
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "udgaaende": {
+                    "type": "nested",
+                    "include_in_parent": true,
+                    "properties": {
+                      "sekvensnr": {
+                        "type": "long"
+                      },
+                      "type": {
+                        "type": "string"
+                      },
+                      "vaerdier": {
+                        "properties": {
+                          "periode": {
+                            "properties": {
+                              "gyldigFra": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              },
+                              "gyldigTil": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              }
+                            }
+                          },
+                          "sidstOpdateret": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "vaerdi": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "vaerditype": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+  "status": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "kreditoplysningkode": {
+                    "type": "long"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  },
+                  "statuskode": {
+                    "type": "long"
+                  }
+                }
+              },
+ "stiftelsesDato": {
+                "type": "date",
+                "format": "dateOptionalTime"
+              },
+ "telefaxNummer": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "hemmelig": {
+                    "type": "boolean"
+                  },
+                  "kontaktoplysning": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+ "telefonNummer": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "hemmelig": {
+                    "type": "boolean"
+                  },
+                  "kontaktoplysning": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+ "virkningsAktoer": {
+                "type": "string"
+              },
+ "virkningsDato": {
+                "type": "date",
+                "format": "dateOptionalTime"
+              },
+ "virksomhedMetadata": {
+                "properties": {
+                  "antalPenheder": {
+                    "type": "long"
+                  },
+                  "nyesteAarsbeskaeftigelse": {
+                    "properties": {
+                      "aar": {
+                        "type": "long"
+                      },
+                      "intervalKodeAntalAarsvaerk": {
+                        "type": "string"
+                      },
+                      "intervalKodeAntalAnsatte": {
+                        "type": "string"
+                      },
+                      "intervalKodeAntalInklusivEjere": {
+                        "type": "string"
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "nyesteBeliggenhedsadresse": {
+                    "properties": {
+                      "bogstavFra": {
+                        "type": "string"
+                      },
+                      "bogstavTil": {
+                        "type": "string"
+                      },
+                      "bynavn": {
+                        "type": "string"
+                      },
+                      "conavn": {
+                        "type": "string"
+                      },
+                      "etage": {
+                        "type": "string"
+                      },
+                      "fritekst": {
+                        "type": "string"
+                      },
+                      "husnummerFra": {
+                        "type": "long"
+                      },
+                      "husnummerTil": {
+                        "type": "long"
+                      },
+                      "kommune": {
+                        "properties": {
+                          "kommuneKode": {
+                            "type": "long"
+                          },
+                          "kommuneNavn": {
+                            "type": "string"
+                          },
+                          "periode": {
+                            "properties": {
+                              "gyldigFra": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              },
+                              "gyldigTil": {
+                                "type": "date",
+                                "format": "dateOptionalTime"
+                              }
+                            }
+                          },
+                          "sidstOpdateret": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "landekode": {
+                        "type": "string"
+                      },
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "postboks": {
+                        "type": "string"
+                      },
+                      "postdistrikt": {
+                        "type": "string"
+                      },
+                      "postnummer": {
+                        "type": "long"
+                      },
+                      "sidedoer": {
+                        "type": "string"
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "vejkode": {
+                        "type": "long"
+                      },
+                      "vejnavn": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "nyesteBibranche1": {
+                    "properties": {
+                      "branchekode": {
+                        "type": "string"
+                      },
+                      "branchetekst": {
+                        "type": "string"
+                      },
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "nyesteBibranche2": {
+                    "properties": {
+                      "branchekode": {
+                        "type": "string"
+                      },
+                      "branchetekst": {
+                        "type": "string"
+                      },
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "nyesteBibranche3": {
+                    "properties": {
+                      "branchekode": {
+                        "type": "string"
+                      },
+                      "branchetekst": {
+                        "type": "string"
+                      },
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "nyesteHovedbranche": {
+                    "properties": {
+                      "branchekode": {
+                        "type": "string"
+                      },
+                      "branchetekst": {
+                        "type": "string"
+                      },
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "nyesteKontaktoplysninger": {
+                    "type": "string"
+                  },
+                  "nyesteKvartalsbeskaeftigelse": {
+                    "properties": {
+                      "aar": {
+                        "type": "long"
+                      },
+                      "intervalKodeAntalAarsvaerk": {
+                        "type": "string"
+                      },
+                      "intervalKodeAntalAnsatte": {
+                        "type": "string"
+                      },
+                      "kvartal": {
+                        "type": "long"
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "nyesteMaanedsbeskaeftigelse": {
+                    "properties": {
+                      "aar": {
+                        "type": "long"
+                      },
+                      "intervalKodeAntalAarsvaerk": {
+                        "type": "string"
+                      },
+                      "intervalKodeAntalAnsatte": {
+                        "type": "string"
+                      },
+                      "maaned": {
+                        "type": "long"
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "nyesteNavn": {
+                    "properties": {
+                      "navn": {
+                        "type": "string",
+                        "copy_to": [
+                          "Vrvirksomhed.virksomhedMetadata.nyesteNavn.navn_sort",
+                          "Vrvirksomhed.virksomhedMetadata.nyesteNavn.navn_forslag"
+                        ]
+                      },
+                      "navn_forslag": {
+                        "type": "string",
+                        "analyzer": "suggester"
+                      },
+                      "navn_sort": {
+                        "type": "string",
+                        "analyzer": "danish_ducet"
+                      },
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "nyesteStatus": {
+                    "properties": {
+                      "kreditoplysningkode": {
+                        "type": "long"
+                      },
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "statuskode": {
+                        "type": "long"
+                      }
+                    }
+                  },
+                  "nyesteVirksomhedsform": {
+                    "properties": {
+                      "ansvarligDataleverandoer": {
+                        "type": "string"
+                      },
+                      "kortBeskrivelse": {
+                        "type": "string"
+                      },
+                      "langBeskrivelse": {
+                        "type": "string"
+                      },
+                      "periode": {
+                        "properties": {
+                          "gyldigFra": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          },
+                          "gyldigTil": {
+                            "type": "date",
+                            "format": "dateOptionalTime"
+                          }
+                        }
+                      },
+                      "sidstOpdateret": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "virksomhedsformkode": {
+                        "type": "long"
+                      }
+                    }
+                  },
+                  "sammensatStatus": {
+                    "type": "string"
+                  },
+                  "stiftelsesDato": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  },
+                  "virkningsDato": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  }
+                }
+              },
+  "virksomhedsform": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "ansvarligDataleverandoer": {
+                    "type": "string"
+                  },
+                  "kortBeskrivelse": {
+                    "type": "string"
+                  },
+                  "langBeskrivelse": {
+                    "type": "string"
+                  },
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  },
+                  "virksomhedsformkode": {
+                    "type": "long"
+                  }
+                }
+              },
+ "virksomhedsstatus": {
+                "type": "nested",
+                "include_in_parent": true,
+                "properties": {
+                  "periode": {
+                    "properties": {
+                      "gyldigFra": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      },
+                      "gyldigTil": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                      }
+                    }
+                  },
+                  "sidstOpdateret": {
+                    "type": "date",
+                    "format": "dateOptionalTime"
+                  },
+                  "status": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
